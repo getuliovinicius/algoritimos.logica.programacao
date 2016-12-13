@@ -1,0 +1,28 @@
+algoritmo "EXERCICIO-4"
+// Função : SEPAR PARES DE IMPARES
+// Autor :
+// Data : 17/11/2015
+var
+// Seção de Declarações
+VET_A, VET_B, VET_C : VETOR [1..5] DE INTEIRO
+I : INTEIRO
+inicio
+// Seção de Comandos
+// PREENCHER O VETOR A
+PARA I DE 1 ATE 5 FACA
+   ESCREVAL("INFORME O", I, "o NUMERO INTEIRO.")
+   LEIA(VET_A[I])
+FIMPARA
+// SEPARAR PARES E IMPARES
+PARA I DE 1 ATE 5 FACA
+   SE (VET_A[I] MOD 2 = 0) ENTAO
+      VET_B[I] <- VET_A[I]
+   SENAO
+      VET_C[I] <- VET_A[I]
+   FIMSE
+FIMPARA
+// EXIBIR OS VALORES
+PARA I DE 1 ATE 5 FACA
+   ESCREVAL("POSICAO",I," | VET_A =", VET_A[I]," | VET_B =", VET_B[I]," | VET_C =", VET_C[I])
+FIMPARA
+fimalgoritmo
